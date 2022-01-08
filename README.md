@@ -4,7 +4,7 @@ Toto je rekurentná neurálna sieť trénovaná na facebookových statusoch Ľub
 
 ## Generovanie vlastných statusov
 
-Ak si chceš vygenerovať vlastné posty, naklonuj repozitár a edituj blahatron_out.py. Tam si vieš nastaviť dĺžku vygenerovaných postov aj teplotu (v istom zmysle je to miera náhodnosti výberu písmen počas generovania --- môže viesť ku skomoleným slovám a všeliakým iným "preklepom") Keď budeš mať blahatron_out.py nastavený ako chceš, spusti ho príkazom "python blahatron_out.py". Tak, ako je teraz napísaný vytvorí súbor output.txt a vygeneruje v ňom 100 statusov. Ak vieš python, vieš si ho jednoducho upraviť aby napríklad písal do konzoly a podobne. Hlavná funkcia o ktorej potrebuješ vedieť je generate_text( , ). Tá berie dva vstupy -- prvý je počet znakov v statuse ktorý má generovať a druhý vstup je teplota.
+Ak si chceš vygenerovať vlastné posty, naklonuj repozitár a edituj blahatron_out.py. Tam si vieš nastaviť dĺžku vygenerovaných postov aj teplotu (v istom zmysle je to miera náhodnosti výberu písmen počas generovania --- vysoká hodnota môže viesť ku skomoleným slovám a všeliakým iným "preklepom") Keď budeš mať blahatron_out.py nastavený ako chceš, spusti ho príkazom "python blahatron_out.py". Tak, ako je teraz napísaný vytvorí súbor output.txt a vygeneruje v ňom 100 statusov. Ak vieš python, vieš si ho jednoducho upraviť aby napríklad písal do konzoly a podobne. Hlavná funkcia o ktorej potrebuješ vedieť je generate_text( , ). Tá berie dva vstupy -- prvý je počet znakov v statuse ktorý má generovať a druhý vstup je teplota.
 
 Časť kódu ktorá generuje statusy je 
 ```
