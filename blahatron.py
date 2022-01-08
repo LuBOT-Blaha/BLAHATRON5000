@@ -48,7 +48,7 @@ for i, satz in enumerate(sentences):
         x[i, t, char_to_index[char]] = 1
     y[i, char_to_index[next_char[i]]] = 1
 
-model = load_model('blahatron_basic')
+model = load_model('blahatron')
 
 log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
@@ -63,4 +63,4 @@ print(model.summary())
 
 model.fit(x, y, batch_size=128, epochs=50, verbose=1, callbacks=[tensorboard_callback])
 
-model.save('blahatron_basic')
+model.save('blahatron')

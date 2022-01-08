@@ -35,3 +35,7 @@ Na spustenie kódu potrebuješ python, tensorfow a numpy
 ## Acknowledgements
 
 Tento kód je z veľkej časti založený na kóde od NeuralNine, preto sme aj zachovali pôvodnú hlavičku s atribúciou v súboroch *.py
+
+# Trénovanie vlastného modelu
+
+Nahraď súbor model.txt vlastným textom. Ak chceš, zmeň názov pod ktorým sa natrénovaný model ukladá upravením riadkov 'model = load_model('meno')' a 'model.save('meno')' v súboroch blahatron.py a blahatron_out.py. Na trénvanie modelu použi súbor 'blahatron.py'. V riadku 64: 'model.fit(...)' vieš nastaviť počet epôch, počas ktorých sa bude model trénovať. Na natrénovanie blahatronu, ktorý je trénovaný na 4.5 megabajtoch textu mi bolo treba 150 epoch. Blahatron má tiež podporu pre sledovanie tréningu pomocou tensoboardu. Príkaz: 'tensorboard --logdir logs/fit' treba spustiť zo zložky projektu.

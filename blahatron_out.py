@@ -46,11 +46,11 @@ for i, satz in enumerate(sentences):
         x[i, t, char_to_index[char]] = 1
     y[i, char_to_index[next_char[i]]] = 1
 
-model = load_model('blahatron_basic')
+model = load_model('blahatron')
 
 #model.fit(x, y, batch_size=128, epochs=1)
 
-#model.save('blahatron_basic')
+#model.save('blahatron')
 
 def sample(preds, temperature):
     preds = np.asarray(preds).astype('float64')
